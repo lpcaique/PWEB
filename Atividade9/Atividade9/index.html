@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Pesquisa de Filme</title>
+  </head>
+  <body>
+    <h1>Pesquisa de Filme</h1>
+    <div class="formulario">
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" min="1" />
+      <label for="sexo">Sexo:</label>
+      <select id="sexo">
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+      </select>
+      <label for="opiniao">Opinião:</label>
+      <select id="opiniao">
+        <option value="4">Ótimo</option>
+        <option value="3">Bom</option>
+        <option value="2">Regular</option>
+        <option value="1">Péssimo</option>
+      </select>
+      <button id="enviar">Enviar</button>
+    </div>
+    <div class="resultados">
+      <h2>Resultados</h2>
+      <p>Média de Idade: <span id="mediaIdade">N/A</span></p>
+      <p>Pessoa mais Velha: <span id="maisVelha">N/A</span></p>
+      <p>Pessoa mais Nova: <span id="maisNova">N/A</span></p>
+      <p>Pessoas que responderam Péssimo: <span id="pessimoCount">N/A</span></p>
+      <p>Porcentagem de Ótimo e Bom: <span id="otimoBomPercent">N/A</span>%</p>
+      <p>Número de Mulheres: <span id="mulheresCount">N/A</span></p>
+      <p>Número de Homens: <span id="homensCount">N/A</span></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

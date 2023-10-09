@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.formulario {
+  margin: 20px;
+}
+
+label,
+select,
+input,
+button {
+  margin: 5px;
+  font-size: 16px;
+}
+
+.resultados {
+  margin: 20px;
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+.resultados h2 {
+  color: #333;
+}
