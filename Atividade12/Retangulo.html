@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo em JavaScript</title>
+</head>
+<body>
+    
+    <script>
+        function Retangulo(x, y) {
+            this.base = x;
+            this.altura = y;
+            this.calcularArea = function() {
+                return this.base * this.altura;
+            };
+        }
+
+        // Criar um objeto retângulo
+        var meuRetangulo = new Retangulo(5, 10);
+
+        // Executar o método que calcula a área
+        var area = meuRetangulo.calcularArea();
+        console.log("Área do retângulo: " + area);
+    </script>
+</body>
+</html>

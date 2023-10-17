@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo em JavaScript</title>
+</head>
+<body>
+    <script>
+        // Classe base para Conta
+        function Conta(nome, correntista, banco, numeroConta, saldo) {
+            this.nome = nome;
+            this.correntista = correntista;
+            this.banco = banco;
+            this.numeroConta = numeroConta;
+            this.saldo = saldo;
+        }
+
+        // Classe derivada "Corrente com Saldo Especial"
+        function CorrenteComSaldoEspecial(nome, correntista, banco, numeroConta, saldo, saldoEspecial) {
+            Conta.call(this, nome, correntista, banco, numeroConta, saldo);
+            this.saldoEspecial = saldoEspecial;
+        }
+
+        // Classe derivada "Poupança com Juros e Data de Vencimento"
+        function PoupancaComJurosDataVencimento(nome, correntista, banco, numeroConta, saldo, juros, dataVencimento) {
+            Conta.call(this, nome, correntista, banco, numeroConta, saldo);
+            this.juros = juros;
+            this.dataVencimento = dataVencimento;
+        }
+
+        // Criar objetos de Conta, Corrente com Saldo Especial e Poupança com Juros e Data de Vencimento
+        var contaNormal = new Conta("Conta Normal", "João", "Banco A", "12345", 1000);
+        var contaCorrente = new CorrenteComSaldoEspecial("Conta Corrente", "Maria", "Banco B", "67890", 2000, 500);
+        var contaPoupanca = new PoupancaComJurosDataVencimento("Conta Poupança", "Pedro", "Banco C", "54321", 1500, 0.03, "01/01/2024");
+
+        // Mostrar os dados das contas
+        console.log("Dados da Conta Normal:", contaNormal);
+        console.log("Dados da Conta Corrente com Saldo Especial:", contaCorrente);
+        console.log("Dados da Conta Poupança com Juros e Data de Vencimento:", contaPoupanca);
+    </script>
+</body>
+</html>
