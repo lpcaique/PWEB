@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 15</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form action="/" method="post" onsubmit="return validar()">
+        <input type="text" name="nome" placeholder="Nome" required>
+        <br><br>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <br><br>
+        <textarea name="comentario" placeholder="Comentário" required></textarea>
+        <br><br>
+        <h3>Pesquisa:</h3>
+        <p>É a sua primeira vez nesta página?</p>
+        <input type="radio" name="pesquisa" value="sim" required> Sim
+        <input type="radio" name="pesquisa" value="nao" required> Não
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
