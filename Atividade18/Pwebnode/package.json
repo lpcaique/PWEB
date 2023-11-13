@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "msnodesqlv8": "^4.1.1"
+  }
+}
